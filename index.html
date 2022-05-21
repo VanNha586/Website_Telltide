@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telluride</title>
+    <!-- link font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--  link bootstrap 4 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ------------------------------- -->
+    <!--             header              -->
+    <!-- ------------------------------- -->
+    <header id="header">
+      <div class="bg-dark">
+        <div class="wp-topbar">
+          <p class="phone">
+            <i class="fa-solid fa-phone"></i>
+            012.345.678.9
+          </p>
+          <ul class="topbar">
+            <li class="topbar-item">
+              <a href="#" class="topbar-link">Webcams</a>
+            </li>
+            <li class="topbar-item">
+              <a href="#" class="topbar-link">Visitor Guide</a>
+            </li>
+            <li class="topbar-item">
+              <a href="#" class="topbar-link">Blog</a>
+            </li>
+            <li class="topbar-item">
+              <a href="#" class="topbar-link">Weather</a>
+            </li>
+            <li class="search">
+              <a href="#" class="search-link"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </li>
+          </ul>
+          <div class="icon-video">
+            <i class="fa-solid fa-video"></i>
+          </div>
+        </div>
+      </div>
+      <div class="bg-transparent bg-max1100">
+        <div class="wp-nav">
+          <a href="#"> <img src="./assets/image/logo-removebg-preview (1).png" alt="" /></a>
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Discover</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Lodging</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Things to Do</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Food & Drink</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Festivals & Events</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Plan Your Visit</a>
+            </li>
+          </ul>
+          <div class="icon-bar">
+            <i class="fa-solid fa-align-right"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ------------------------------- -->
+    <!--           header end            -->
+    <!-- ------------------------------- -->
+    <section class="banner">
+      <picture class="image_panel">
+        <img
+          src="https://www.telluride.com/site/assets/files/44230/i-wwjhcbb-x4.2400x1200.webp"
+          alt=""
+        />
+        <div class="banner__text">
+          <h1>Summer Dreaming</h1>
+          <a href="#">Explore Activities</a>
+        </div>
+      </picture>
+      <div class="booking__full tabs">
+        <div class="group-tabs">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs tabs-list" role="tablist">
+            <li role="presentation" class="active tabs-item">
+              <a
+                href="#lodging"
+                class="tabs-link"
+                aria-controls="lodging"
+                role="tab"
+                data-toggle="tab"
+                >Lodging</a
+              >
+            </li>
+            <li role="presentation" class="tabs-item">
+              <a
+                href="#flights"
+                class="tabs-link"
+                aria-controls="flights"
+                role="tab"
+                data-toggle="tab"
+                >Flights</a
+              >
+            </li>
+            <li role="presentation" class="tabs-item">
+              <a
+                href="#offers"
+                class="tabs-link"
+                aria-controls="offers"
+                role="tab"
+                data-toggle="tab"
+                >Offers & Packages</a
+              >
+            </li>
+            <li role="presentation" class="tabs-item">
+              <a
+                href="#shuttles"
+                class="tabs-link"
+                aria-controls="shuttles"
+                role="tab"
+                data-toggle="tab"
+                >Shuttles</a
+              >
+            </li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content booking_calendar">
+            <div role="tabpanel" class="tab-pane active" id="lodging">
+              <form class="pt-3 px-3">
+                <div class="row">
+                  <div class="col-lg-5 col-md-12">
+                    <div class="row">
+                      <div class="input-group mb-3 col-6 input-group-sm">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"
+                            ><i class="fa-solid fa-calendar-days"></i
+                          ></span>
+                        </div>
+                        <input type="date" class="form-control" />
+                      </div>
+                      <div class="input-group mb-3 col-6 input-group-sm">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"
+                            ><i class="fa-solid fa-calendar-days"></i
+                          ></span>
+                        </div>
+                        <input type="date" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-5 col-md-12">
+                    <div class="row">
+                      <div class="input-group mb-3 col-6 input-group-sm">
+                        <select class="form-control" id="sel1">
+                          <option>1 Adult</option>
+                          <option>2 Adult</option>
+                          <option>3 Adult</option>
+                          <option>4 Adult</option>
+                          <option>5 Adult</option>
+                          <option>6 Adult</option>
+                          <option>7 Adult</option>
+                          <option>8 Adult</option>
+                          <option>9 Adult</option>
+                          <option>10 Adult</option>
+                        </select>
+                      </div>
+                      <div class="input-group mb-3 col-6 input-group-sm">
+                        <select class="form-control" id="sel1">
+                          <option>1 Children</option>
+                          <option>2 Children</option>
+                          <option>3 Children</option>
+                          <option>4 Children</option>
+                          <option>5 Children</option>
+                          <option>6 Children</option>
+                          <option>7 Children</option>
+                          <option>8 Children</option>
+                          <option>9 Children</option>
+                          <option>10 Children</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-md-12 mb-3">
+                    <button class="btn btn-outline-success" style="width: 100%">Find Offers</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="flights">
+              <div role="tabpanel" class="tab-pane active" id="lodging">
+                <form class="pt-3">
+                  <div class="row">
+                    <div class="col-lg-5 col-md-12">
+                      <div class="row">
+                        <div class="input-group mb-3 col-6 input-group-sm">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"
+                              ><i class="fa-solid fa-calendar-days"></i
+                            ></span>
+                          </div>
+                          <input type="date" class="form-control" />
+                        </div>
+                        <div class="input-group mb-3 col-6 input-group-sm">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"
+                              ><i class="fa-solid fa-calendar-days"></i
+                            ></span>
+                          </div>
+                          <input type="date" class="form-control" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12">
+                      <div class="row">
+                        <div class="input-group mb-3 col-6 input-group-sm">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Departure City Airport Code"
+                          />
+                        </div>
+                        <div class="input-group mb-3 col-6 input-group-sm">
+                          <select class="form-control" id="sel1">
+                            <option value>Select One</option>
+                            <option value="MJT">MJT</option>
+                            <option value="TEX">TEX</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-3 col-lg-2 col-md-12">
+                      <button class="btn btn-outline-success">Find Offers</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="offers">
+              <div role="tabpanel" class="tab-pane active" id="lodging">
+                <form class="pt-3 px-3">
+                  <div class="row">
+                    <div class="col-lg-2 col-md-12">
+                      <div class="row">
+                        <div class="input-group mb-3 col-6 input-group-sm">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"
+                              ><i class="fa-solid fa-calendar-days"></i
+                            ></span>
+                          </div>
+                          <input type="date" class="form-control" />
+                        </div>
+                        <div class="input-group mb-3 col-6 input-group-sm">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"
+                              ><i class="fa-solid fa-calendar-days"></i
+                            ></span>
+                          </div>
+                          <input type="date" class="form-control" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12">
+                      <div class="row">
+                        <div class="input-group mb-3 col-6 input-group-sm">
+                          <select class="form-control" id="sel1">
+                            <option>1 Adult</option>
+                            <option>2 Adult</option>
+                            <option>3 Adult</option>
+                            <option>4 Adult</option>
+                            <option>5 Adult</option>
+                            <option>6 Adult</option>
+                            <option>7 Adult</option>
+                            <option>8 Adult</option>
+                            <option>9 Adult</option>
+                            <option>10 Adult</option>
+                          </select>
+                        </div>
+                        <div class="input-group mb-3 col-6 input-group-sm">
+                          <select class="form-control" id="sel1">
+                            <option>0 Children</option>
+                            <option>1 Children</option>
+                            <option>2 Children</option>
+                            <option>3 Children</option>
+                            <option>4 Children</option>
+                            <option>5 Children</option>
+                            <option>6 Children</option>
+                            <option>7 Children</option>
+                            <option>8 Children</option>
+                            <option>9 Children</option>
+                            <option>10 Children</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-3 col-lg-2 col-md-12">
+                      <button class="btn btn-outline-success">Find Offers</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="shuttles">
+              <form class="pt-3 px-3">
+                <div class="row">
+                  <div class="input-group col-lg-10 mb-3 col-md-12 input-group-sm">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"
+                        ><i class="fa-solid fa-calendar-days"></i
+                      ></span>
+                    </div>
+                    <input type="date" class="form-control" />
+                  </div>
+
+                  <div class="mb-3 col-lg-2 col-md-12">
+                    <button class="btn btn-outline-success">Find Offers</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-list">
+        <div class="card-item">
+          <a href="#" class="card-link">
+            <picture>
+              <img
+                src="https://www.telluride.com/site/assets/files/44232/dining.450x304.webp"
+                alt=""
+            /></picture>
+            <div class="card-link-body">
+              <h2 class="card-title">Off-Season Dining</h2>
+              <p class="decs">
+                View a list pf dining options in Telluride & Mountain Village this spring
+              </p>
+              <a class="card-learn" href="#"> Learn More</a>
+            </div>
+          </a>
+        </div>
+        <div class="card-item">
+          <a href="#" class="card-link">
+            <picture>
+              <img
+                src="https://www.telluride.com/site/assets/files/37549/visitor-guide-spring-2022-right-white.450x304.webp"
+                alt=""
+            /></picture>
+            <div class="card-link-body">
+              <h2 class="card-title">Off-Season Dining</h2>
+              <p class="decs">
+                View a list pf dining options in Telluride & Mountain Village this spring
+              </p>
+              <a class="card-learn" href="#"> Learn More</a>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="fifty-fifty__section">
+      <div class="fifty-fifty">
+        <div class="fifty-image">
+          <picture>
+            <img
+              src="https://www.telluride.com/site/assets/files/42791/img_0715-2100x1400-a21e04d6-7d91-4304-a584-fe35011356d7.1400x1089.webp"
+              alt=""
+            />
+            <div class="fifty-image-children">
+              <img
+                src="https://www.telluride.com/site/assets/files/42791/bluegrass.500x633.webp"
+                alt=""
+              />
+            </div>
+          </picture>
+        </div>
+        <div class="fifty-body">
+          <div class="fifty-title">COUNTDOWN TO FESTIVAL SEASON</div>
+          <div class="fifty-text">
+            For over 40 years, the name "Telluride" has been synonymous with its festivals—whether
+            musical, cultural, culinary, scientific, athletic or just a dash of unusual.
+          </div>
+          <div class="fifty-button">Learn More</div>
+        </div>
+      </div>
+    </section>
+    <section class="event-blogs-list">
+      <div class="event-blogs-item">
+        <h2 class="event-blogs-title">UPCOMING EVENTS</h2>
+        <div class="event-list">
+          <div class="event-item">
+            <img
+              src="https://www.telluride.com/site/assets/files/44346/lucia-1600c685.800x533.webp"
+              alt=""
+            />
+            <p>May 21, 2022</p>
+            <h3 class="event-decs">Met Opera broadcast: LUCIA DI LAMMERMOOR (Donizetti)</h3>
+          </div>
+          <div class="event-item">
+            <img
+              src="https://www.telluride.com/site/assets/files/37449/img_0715-2100x1400-a21e04d6-7d91-4304-a584-fe35011356d7.800x533.webp"
+              alt=""
+            />
+            <p>May 26 - 30, 2022</p>
+            <h3 class="event-decs">Mountainfilm 2022</h3>
+          </div>
+        </div>
+      </div>
+      <div class="event-blogs-item">
+        <h2 class="event-blogs-title">THE BLOG</h2>
+
+        <div class="blogs-list">
+          <div class="blogs-item">
+            <img
+              src="https://www.telluride.com/site/assets/files/37453/i-tf8glj6-x5.800x533.webp"
+              alt=""
+            />
+            <p>Blog</p>
+            <h3 class="blogs-decs">Take the Tell-U-Right Pledge</h3>
+          </div>
+          <div class="blogs-item">
+            <img
+              src="https://www.telluride.com/site/assets/files/37493/img_9987_s14-2100x1400-adc78961-0387-4bec-bd3e-c045aa050235.800x533.webp"
+              alt=""
+            />
+            <p>Blog</p>
+            <h3 class="blogs-decs">Camp with Care</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-three-list">
+      <div class="cta-three-item">
+        <img src="https://www.telluride.com/site/assets/files/37553/pool_5.1200x1209.webp" alt="" />
+        <div class="cta-content">
+          <h2 class="cta-content-title">FIND YOUR PLACE</h2>
+          <p class="cta-content-decs">Browse all lodging listing</p>
+        </div>
+      </div>
+      <div class="cta-three-item">
+        <img
+          src="https://www.telluride.com/site/assets/files/37535/dsc3673.1200x1209.webp"
+          alt=""
+        />
+        <div class="cta-content">
+          <h2 class="cta-content-title">SUMMER ACTIVITIES</h2>
+          <p class="cta-content-decs">Fun in the sun</p>
+        </div>
+      </div>
+      <div class="cta-three-item">
+        <img
+          src="https://www.telluride.com/site/assets/files/36793/telluride_air.1200x1209.webp"
+          alt=""
+        />
+        <div class="cta-content">
+          <h2 class="cta-content-title">PLAN YOUR VISIT</h2>
+          <p class="cta-content-decs">Everything you need to know</p>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container">
+        <form class="pt-3 px-3 form-group-calendar bg-white">
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="row">
+                <div class="input-group mb-3 col-lg-6 col-md-12 input-group-sm">
+                  <div class="body-content">
+                    <h3>
+                      I’M LOOKING FOR:
+                      <p>LODGING</p>
+                    </h3>
+                  </div>
+                </div>
+                <div class="input-group mb-3 col-lg-6 col-md-12 input-group-sm">
+                  <input type="date" class="form-control" />
+                </div>
+                <div class="input-group mb-3 px-3 d-lg-none input-group-sm">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Departure City Airport Code"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-12">
+              <div class="row">
+                <div class="input-group mb-3 col-6 input-group-sm">
+                  <select class="form-control" id="sel1">
+                    <option>1 Adult</option>
+                    <option>2 Adult</option>
+                    <option>3 Adult</option>
+                    <option>4 Adult</option>
+                    <option>5 Adult</option>
+                    <option>6 Adult</option>
+                    <option>7 Adult</option>
+                    <option>8 Adult</option>
+                    <option>9 Adult</option>
+                    <option>10 Adult</option>
+                  </select>
+                </div>
+                <div class="input-group mb-3 col-6 input-group-sm">
+                  <select class="form-control" id="sel1">
+                    <option>0 Children</option>
+                    <option>1 Children</option>
+                    <option>2 Children</option>
+                    <option>3 Children</option>
+                    <option>4 Children</option>
+                    <option>5 Children</option>
+                    <option>6 Children</option>
+                    <option>7 Children</option>
+                    <option>8 Children</option>
+                    <option>9 Children</option>
+                    <option>10 Children</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="mb-3 col-lg-2 col-md-12">
+              <button class="btn btn-outline-success">Find Offers</button>
+            </div>
+          </div>
+        </form>
+
+        <div class="menus">
+          <div class="contact">
+            <div class="sigup">
+              <h4>
+                <a href="tel:012.345.678.9">
+                  <i class="fa-solid fa-phone"></i>
+                  Toll Free 012.345.678.9
+                </a>
+              </h4>
+              <p class="sigup-decs">
+                Stay in the know. Get the latest news, updates and offers from Telluride.
+              </p>
+              <form class="formGroup">
+                <div class="formCtroller">
+                  <input type="text" name="" id="" />
+                </div>
+                <div class="formCtroller">
+                  <select name="" id="">
+                    <option value="">Country</option>
+                  </select>
+                </div>
+                <button class="btn btn-primary submit">Submit</button>
+              </form>
+            </div>
+          </div>
+          <div class="menu discover">
+            <h2 class="menu_title">DISCOVER</h2>
+            <ul class="dis_list menu_list">
+              <li class="dis_item menu_item">
+                <a href="#" class="dis_link menu_link"> In Winter </a>
+              </li>
+              <li class="dis_item menu_item">
+                <a href="#" class="dis_link menu_link"> In Summer </a>
+              </li>
+              <li class="dis_item menu_item">
+                <a href="#" class="dis_link menu_link"> For Families </a>
+              </li>
+              <li class="dis_item menu_item">
+                <a href="#" class="dis_link menu_link"> The Destination </a>
+              </li>
+              <li class="dis_item menu_item">
+                <a href="#" class="dis_link menu_link"> Dining </a>
+              </li>
+              <li class="dis_item menu_item">
+                <a href="#" class="dis_link menu_link"> Lodging </a>
+              </li>
+              <li class="dis_item menu_item">
+                <a href="#" class="dis_link menu_link"> About Us </a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu plan">
+            <h2 class="menu_title">PLAN YOUR VISIT</h2>
+            <ul class="menu_list">
+              <li class="menu_item"><a href="#" class="menu_link">Webcams</a></li>
+              <li class="menu_item"><a href="#" class="menu_link">Weather</a></li>
+              <li class="menu_item"><a href="#" class="menu_link">Maps</a></li>
+              <li class="menu_item"><a href="#" class="menu_link">Getting Here</a></li>
+              <li class="menu_item"><a href="#" class="menu_link">Official Visitors Guide</a></li>
+              <li class="menu_item"><a href="#" class="menu_link">Groups & Meetings</a></li>
+              <li class="menu_item"><a href="#" class="menu_link">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="menu links">
+            <h2 class="menu_title">USEFUL LINKS</h2>
+            <ul class="menu_list">
+              <li class="menu_item"><a href="#" class="menu_link">Visitors Center</a></li>
+              <li class="menu_item"><a href="#" class="menu_link">Media</a></li>
+              <li class="menu_item"><a href="#" class="menu_link">Sustainability</a></li>
+              <li class="menu_item"><a href="#" class="menu_link">Business Directory</a></li>
+              <li class="menu_item"><a href="#" class="menu_link">Bienvenido a Telluride</a></li>
+              <li class="menu_item"><a href="#" class="menu_link">テルライドへようこそ</a></li>
+              <li class="menu_item"><a href="#" class="menu_link">Bem-vindo a Telluride</a></li>
+              <li class="menu_item"><a href="#" class="menu_link">Willkommen in Telluride</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="promos">
+          <div class="contact">
+            <ul class="icons">
+              <li class="icon-item">
+                <a href="" class="icon-link">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="icon-item">
+                <a href="" class="icon-link">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li class="icon-item">
+                <a href="" class="icon-link">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li class="icon-item">
+                <a href="" class="icon-link">
+                  <i class="fa-brands fa-pinterest"></i>
+                </a>
+              </li>
+            </ul>
+            <div class="legal">
+              <h3 class="legal_title">MADE IN TELLURIDE ®</h3>
+              <p class="legal_decs">©2022 Telluride Tourism Board</p>
+            </div>
+          </div>
+
+          <div class="promo_section_official">
+            <div class="official_section">
+              <img
+                src="https://www.telluride.com/site/assets/files/37549/visitor-guide-spring-2022-right-white.450x304.webp"
+                alt=""
+              />
+              <div class="promo_content">
+                <h3 class="promo_title">
+                  GET THE OFFICIAL TELLURIDE MOUNTAIN VILLAGE VISITOR GUIDE
+                </h3>
+                <p class="promo_leran"><a href="#">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="promo_section_afind">
+            <div class="official_section">
+              <img
+                src="https://www.telluride.com/site/assets/files/37549/visitor-guide-spring-2022-right-white.450x304.webp"
+                alt=""
+              />
+              <div class="promo_content">
+                <h3 class="promo_title">AFIND US AT THE TELLURIDE VISITORS CENTER</h3>
+                <p class="promo_leran"><a href="#">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
